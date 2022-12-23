@@ -1,3 +1,5 @@
+wonder readme :smile:
+
 # react-router-stock
 
 #### This app retrieves real-time data from [stock api](https://financialmodelingprep.com) and displays information. 

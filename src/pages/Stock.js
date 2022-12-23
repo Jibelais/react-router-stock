@@ -7,7 +7,7 @@ function Stock() {
     const params = useParams()
     console.log(params)
     const symbol = params.symbol
-
+//perfect endpoint
     const url = `https://financialmodelingprep.com/api/v3/quote/${symbol}?apikey=${apiKey}`
 
     const [stock, setStock] = useState('null')
@@ -25,7 +25,7 @@ function Stock() {
     return (
         <div className="Price">
         {stock === "null" ? (
-          <h2>Loading...</h2>
+          <i class="fa fa-spinner fa-spin" style={{ fontSize:"24px", textAlign: "center", display: 'block'}}></i>
         ) : (
           <div>
             <h1>{stock[0].name}</h1>
